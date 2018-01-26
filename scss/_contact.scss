@@ -1,0 +1,121 @@
+
+ .contact-form{
+	 margin-left: 2em;
+
+	 input, textarea{
+		 background: #e8e8e8;
+		 outline: none;
+		 border: none;
+		 border-radius: 5px;
+		 width: 100%;
+	 }
+
+	 input{
+		height:25px;
+	 }
+
+	 textarea{
+		 height:10em;
+	 }
+
+	 .row{
+		 margin-bottom: 2em;
+		 align-items:center;
+		 display:flex;
+		 justify-content: space-evenly;
+
+	 }
+
+	 label{
+		 position: absolute;
+		 top: 50%;	
+		 transition: .2s;	
+		 font-size: 12px; 
+	 }
+
+	 .primary-button{
+		 width: 50%;
+		 height: 25px;
+		 border-radius: 5px;
+		 background: #29a29f;
+		 border: 0;
+		 outline: none;
+		 color: white;
+		 font-size: 12px;
+		 cursor: pointer;
+
+		 &:hover{
+			 background:#37dfdc
+		 }
+	 }
+ }
+
+.col-half{
+	position:relative;
+	width: 45%;
+
+	label{
+		left:6%;
+		transform:translate(-6%, -50%);
+	}
+	input{
+		&:focus{
+			+ label{
+				transform:translate(-7%, -200%);
+			}
+		}
+		&:valid{
+			+ label{
+				transform:translate(-7%, -200%);
+			}
+		}
+	}
+}
+
+.col-full{
+	position:relative;
+	width: 94%;
+	label{
+		left: 0;
+		transform: translate(6%, -50%);
+	}
+	input{
+		&:focus{
+			+ label{
+				transform:translate(6%, -200%);
+			}
+		}
+		&:valid{
+			+ label{
+				transform:translate(6%, -200%);
+			}
+		}
+	
+	}
+}
+.message-container{
+	label{
+		top:12%;
+	}
+
+	textarea{
+		&:focus{
+			+ label{
+				transform:translate(6%, -200%);
+			}
+		}
+		&:valid{
+			+ label{
+				transform:translate(6%, -200%);
+			}
+		}
+	}
+}
+
+
+@media (min-width: 320px) and (max-width: 550px)
+{
+	.contact-form{
+		margin-left: 0;
+	}
+}

@@ -1,9 +1,6 @@
 $(document).ready(function(){
-
-    $("#burger-nav").on("click", function(){
-    
-        $("header nav ul").toggleClass("open");
-        
-    });
-
+	$('.menu-toggle').click(function(){
+        $(this).toggleClass('open');
+        $('.mobile-nav').toggleClass('open');
+	});
 });

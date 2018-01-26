@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>IT SOLUTIONS| Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="nav-bar">
+
+			<img src="logo_ny.png" alt="ItSolutions logotype" class="logo">
+
+			<ul class="nav">
+				<li class="nav-link">
+					<a href="/">Hem</a>
+				</li>
+				<li class="nav-link">
+					<a href="">Våra tjänster</a>
+				</li>
+				<li class="nav-link">
+					<a href="">Kunder</a>
+				</li>
+				<li class="nav-link">
+					<a href="about.html">Om oss</a>
+				</li>
+				<li class="nav-link">
+					<a href="contact.html">Kontakt</a>
+				</li>
+			</ul>
+			<ul class="social-media-links">
+				<li class="social-media-link">
+					<a href="https://facebook.com" target="_blank">
+						<img src="face.png" />
+					</a>
+				</li>
+				<li class="social-media-link">
+					<a href="https://twitter.com" target="_blank">
+						<img src="twitter.png" />
+					</a>
+				</li>
+				<li class="social-media-link">
+					<a href="https://linkedin.com" target="_blank">
+						<img src="linkedin.png" />
+					</a>
+				</li>
+			</ul>
+			<div class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<ul class="mobile-nav">
+		<li class="nav-link">
+			<a href="/">Hem</a>
+		</li>
+		<li class="nav-link">
+			<a href="">Våra tjänster</a>
+		</li>
+		<li class="nav-link">
+			<a href="">Kunder</a>
+		</li>
+		<li class="nav-link">
+			<a href="about.html">Om oss</a>
+		</li>
+		<li class="nav-link">
+			<a href="contact.html">Kontakt</a>
+		</li>
+	</ul>
+
+	<div class="container">
+		<img src="kontaktbild.jpg" class="company" />
+
+		<form class="contact-form">
+			<h2>Kontakta oss</h2>
+			<div class="row">
+				<div class="col-half">
+					<input type="text" name="firstname" id="firstname" required/>
+					<label for="firstname">Förnamn</label>
+				</div>
+				<div class="col-half">
+					<input type="text" name="lastname" id="lastname" required/>
+					<label for="lastname">Efternamn</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-full">
+					<input type="text" name="email" id="email" required/>
+					<label for="email">E-post</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-full">
+					<input type="text" name="subject" id="subject" required/>
+					<label for="subject">Ämne</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-full message-container">
+					<textarea type="text" name="message" id="message" required></textarea>
+					<label for="message">Meddelande</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-full">
+					<button class="primary-button" type="submit">Skicka</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<footer>
+		<ul class="footer-links">
+			<li>Holländargatan 13</li>
+			<li>111 36 Stockholm</li>
+			<li>+46(0)8 669 67 86</li>
+			<li>question@itsolutions.com </li>
+			<li class="social-media-link">
+				<a href="https://facebook.com" target="_blank">
+					<img src="face.png" />
+				</a>
+			</li>
+			<li class="social-media-link">
+				<a href="https://twitter.com" target="_blank">
+					<img src="twitter.png" />
+				</a>
+			</li>
+			<li class="social-media-link">
+				<a href="https://linkedin.com" target="_blank">
+					<img src="linkedin.png" />
+				</a>
+			</li>
+		</ul>
+		<ul class="footer-social-links">
+			<li>
+				<a href="https://facebook.com" target="_blank">
+					<img src="face.png" />
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com" target="_blank">
+					<img src="twitter.png" />
+				</a>
+			</li>
+			<li>
+				<a href="https://linkedin.com" target="_blank">
+					<img src="linkedin.png" />
+				</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="menu.js"></script>
+
+</html>

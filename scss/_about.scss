@@ -1,0 +1,39 @@
+
+.heading {
+   width: 30em;
+
+  float:right;
+  position: absolute;
+  top:12em;
+  right:4em;
+}
+
+
+
+
+.wrapper{
+   width: 98%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 2%;    
+}
+
+
+
+.preamble{
+   text-align:left;
+   font-size:16px;
+   margin: 0 0 0 2em;
+   line-height: 2;
+}
+
+.container{
+   display:flex;
+   align-items:center;
+   margin: 2em 2em 0 2em;
+   min-height:100%;
+   position:relative;
+}
+
+
+

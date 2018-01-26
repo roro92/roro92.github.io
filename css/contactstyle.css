@@ -1,0 +1,36 @@
+.contact-form {
+  margin-left: 2em; }
+  .contact-form input, .contact-form textarea {
+    background: #ccc;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100%; }
+  .contact-form input {
+    height: 25px; }
+  .contact-form textarea {
+    height: 10em; }
+  .contact-form .row {
+    margin-bottom: 2em;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+  .contact-form label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%); }
+
+.col-half {
+  width: 45%; }
+
+.col-full {
+  width: 94%; }
