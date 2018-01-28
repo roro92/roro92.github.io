@@ -1,0 +1,42 @@
+* {
+	font-family: Arial;
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: $white;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin: 0;
+	padding: 0;
+	color: $svart;
+}
+p {
+	color: $svart;
+}
+h1 {
+	color: $svart;
+}
+h2 {
+	color: $svart;
+}
+h3 {
+	color: $svart;
+}
+h4 {
+	color: $svart;
+}
+.wrapper {
+	width: 98%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
