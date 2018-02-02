@@ -35,7 +35,6 @@ header {
 			margin: 0;
 			padding: 0;
 		}
-	
 		li {
 			position: relative;
 			list-style-type: none;
@@ -58,13 +57,8 @@ header {
 			}
 		}
 		a {
-			border-left-style: solid;
-            border-left-width: 2px;
 			text-decoration: none;
 			color: $blue;
-			padding-left: 10px;
-
-
 		}
 	}
 	&:after {
@@ -176,90 +170,53 @@ label {
 
 
 //Footer
-
 footer {
 	background: $blue;
-	text-align: center;
+	padding: 1rem 0;
+	position: relative;
+	height: 6rem;
 	li {
-		padding: 15px;
-		display:inline-block;
+		display: flex;
+		width: 100%;
 		color: $white;
 		font-size: 0.875rem;
 		text-decoration: none;
+		justify-content: center;
 		line-height: 1.5;
+	}
+	.logos {
 		img {
-			width: 20px;
+			position: absolute;
+			width: 8%;
+			top: 1.875rem;
+			right: 15rem;
+			visibility: hidden;
 		}
-	} 
-
-}
-
-
-//Media query desktop
-@media only screen and (max-width: 2000px){
-   .card {
-    display:flex;
-	justify-content:row-reverse;
-    }
-
-    .card-content {
-	padding: 1.5em;
-	 width: auto;
-     float: right;
-     align-content: center;
-     text-align: center;
-}
-
-.logos-wrapper {
-	text-align: center;
-	margin-left: 390px;
-
-}
-.logos-wrapper img {
-/*
-	display:flex;
-	justify-content:flex-start;*/
-}
-    footer {
-    overflow: hidden;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    }
-    .logos img {
-    	display:none;
-    }
-    .logos_2 img {
-    	display:none;
-    }
-    .logos_3 img{
-    	display:none;
-    }
-}
-
- .kontakt{
- 	height: 0.625em;
- 	width: 0.625em;
-    }
-
+	}
+	.logos_2 {
+		img {
+			position: absolute;
+			width: 8%;
+			top: 2.063rem;
+			visibility: hidden;
+		}
+	}
+	.logos_3 {
+		img {
+			position: absolute;
+			width: 8%;
+			top: 1.688rem;
+			visibility: hidden;
+		}
+	}
+}// footer end
 
 //Media query Tablet
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
     .card {
     display:flex;
 	justify-content:row-reverse;
     }
-
-.card-content {
-	padding: 1.5em;
-	 width: auto;
-     float: right;
-     align-content: center;
-     text-align: center;
-}
-
     footer {
     overflow: hidden;
     position: fixed;
@@ -268,22 +225,27 @@ footer {
     width: 100%;
     color: #fff;
     }
-.logos img {
-    	display:none;
-    }
-    .logos_2 img {
-    	display:none;
-    }
-    .logos_3 img{
-    	display:none;
-    }
 }
 
- .kontakt{
- 	height: 0.625em;
- 	width: 0.625em;
-    }
 
+//Media query desktop
+@media only screen and (min-width: 1366px){
+
+.card {
+	display:flex;
+	justify-content:row-reverse;
+}
+footer {
+ overflow: hidden;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+
+}
+
+}
 
 
 @media screen and (max-width: 480px) {
@@ -334,9 +296,7 @@ footer {
 	}
     
     
-  .card-content {
-	padding: 1.5em;
-}
+  
     
 	footer {
 		background: $blue;
@@ -386,5 +346,27 @@ footer {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	header {
+		nav {
+			width: 100%;
 
+			li {
+				display: inline;
+				margin-left: 0;
+				width: 16.66%;
+				text-align: center;
+				font-size: 0.875rem;
+			}
+		}
+
+		h1.logo {
+			float: none;
+			margin: 0 auto 3rem;
+		}
+	}
+	.social-media {
+		
+	}
+}
 
