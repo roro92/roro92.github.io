@@ -42,6 +42,9 @@ header {
 			float: left;
 			margin-left: 1.25rem;
 			margin-top: 0.625rem;
+			&:first-child a{
+				border-left-style: none;
+			}
 		}
 		li.tw {
 			width: 20px;
@@ -50,6 +53,7 @@ header {
 			float: left;
 			margin-left: 0;
 			margin-top: 0;
+			margin: 3px;
 
 			img {
 				width: 100%;
@@ -101,7 +105,9 @@ p, li, h1, h2, h3, h4{
 
 }//.section-b end
 
-
+.section-b {
+	float: left;
+}
 
 .card-content {
 	padding: 1.5em;
@@ -120,18 +126,22 @@ p, li, h1, h2, h3, h4{
 }
 
 .contact {
+	img {
+		margin: 5px;
+	}
 	form {
+		padding: 50px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 1.25rem;
 		label {
-			display: block;
+		display: block;
 		}
 		.full {
 			grid-column: 1 / 3;
 		}
 		button {
-			width: 100%;
+			width: 20%;
 			padding: 1em;
 			border: 0.063rem dotted $blue;
 			background: $blue;
